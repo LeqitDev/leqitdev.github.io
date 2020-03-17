@@ -33,7 +33,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact Me</a>
+                                <a class="nav-link" href="#" id="contactmelink" data-toggle="modal" data-target="#contactmemodal" data-whatever="@leqitdev">Contact Me</a>
                             </li>
                         </ul>
                         <a class="btn btn-git btn-secondary" href="https://github.com/LeqitDev" data-toggle="tooltip" data-placement="down" title="My Github profile"><i class="fab fa-github pr-1"></i> Github</a>
@@ -42,6 +42,40 @@
             </nav>
         </header>
         <main>
+
+            <div class="modal fade" id="contactmemodal" tabindex="-1" role="dialog" aria-labelledby="contactmelink" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Send me an email:</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form method="post" action="https://script.google.com/macros/s/AKfycbyYyMZgbbqhc3KVq-gkUdER-KOjeqh8askFHjXwBCjJWjav8GTW/exec" id="mailform">
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">From:</label>
+                                    <input type="text" class="form-control" id="recipient-name" name="name" placeholder="Your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="col-form-label">Your email:</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your email address" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text" name="message" placeholder="Your message..." required></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" form="mailform" class="btn btn-primary">Send message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="container mt-4">
                 <div class="pt-5 pb-5">
                     <div class="pb-3">
@@ -57,11 +91,12 @@
                     <div class="pb-2">
                         <h3 class="text-center font-weight-bold">About Me</h3>
                         <p class="text-center pt-3">
-                            So that is my about me section... I don't know what I should write... <br><br>
-                            But I try: <br><br>
-                            So I'm Markus or CubeCoder or LeqitDev <br><br>
-                            I live in Germany (so I'm sorry if my english isn't perfect) <br><br>
-                            I'm 15 years old and i'm in the 10th grade <br><br>
+                            So that is my about me section... I don't know what I should write... <br>
+                            But I try: <br>
+                            So I'm Markus or CubeCoder or LeqitDev <br>
+                            I live in Germany (so I'm sorry if my english isn't perfect) <br>
+                            I'm 15 years old and i'm in the 10th grade <br>
+                            When I am not programming I like to play shooters like CSGO or Apex Legends <br> or sometimes Indie games and sometimes strategy games like Smite<br>
                             And if you interested how I came in contact with programming language: <a href="#exp">Experiences</a>
                         </p>
                     </div>
@@ -93,16 +128,35 @@
                                         </p>
                                     </div>
                                     <div class="tab-pane fade" id="list-java" role="tabpanel" aria-labelledby="list-java-list">
-
+                                        <p style="line-height: 180%">
+                                            Java was my second programming language. I got to know it through Minecraft and then I also programmed e.g. plugin.
+                                            Meanwhile I saw that you can do other things with it like JFrames (applications) or even small games with LibGDX (library).
+                                            But I also kept coming back to smaller gadgets like a cmd- (Windows command prompt) calculator.
+                                            Because of the urge to develop games which I made with LibGDX at that time I also came to the game engine <a data-toggle="list" href="#list-unity">Unity</a>.
+                                        </p>
                                     </div>
                                     <div class="tab-pane fade" id="list-c" role="tabpanel" aria-labelledby="list-c-list">
-
+                                        <p style="line-height: 180%">
+                                            I was also interested in lowlevel languages and I started to get more and more involved in OS development.
+                                            So I first came to assembler which is in my opinion very difficult to understand and doesn't take much work off your shoulders with e.g. simple loops.
+                                            Therefore I came to the language C. I had to learn it first, but Java gave me most of the basics.
+                                            In C you had all the advantages of a high level programming language including an easier understanding of the code and a lot of access to the hardware.
+                                            I only have contact with C because of my kernel (<a href="/kernel">CCOS</a>).
+                                        </p>
                                     </div>
                                     <div class="tab-pane fade" id="list-unity" role="tabpanel" aria-labelledby="list-unity-list">
-
+                                        <p style="line-height: 180%">
+                                            I started with Unity because I was very interested in game development. First I programmed smaller games to get into the C# language.
+                                            I programmed both 2D and 3D games but unfortunately most of them were not finished because other things or ideas of relationships kept me from finishing them.
+                                            Now I am working on a small 2D mobile dungeon crawler. I am also working in the team MoveByte on a 3D game for the desktop.
+                                        </p>
                                     </div>
                                     <div class="tab-pane fade" id="list-others" role="tabpanel" aria-labelledby="list-others-list">
-
+                                        <p style="line-height: 180%">
+                                            In this learning and development process one had of course also contact with other engines or programming languages.
+                                            That's also how I got to know the Unreal engine, for example. But it was too confusing for me and somehow it didn't fit me so well, so I stayed with unity.
+                                            I also had contact to the programming language C++ but it didn't fit my taste so I stayed with the other programming languages.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
